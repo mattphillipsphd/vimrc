@@ -19,7 +19,16 @@ $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 $ cp <path>/mattphillipsphd/vimrc/.vimrc ~
 $ vim +PluginInstall +qall
 
-And that should do it.  See
+And that should do it for basic setup.  For filetype-specific controls:
+
+$ mkdir ~/.vim/ftplugin
+$ cp <path>/ftplugin/cpp.vim ~/.vim/ftplugin
+
+And any others that might be present.  See
+
+https://vi.stackexchange.com/questions/4/how-can-i-change-the-default-indentation-based-on-filetype
+
+and
 
 https://github.com/tmux-plugins/tpm
 https://github.com/VundleVim/Vundle.vim
