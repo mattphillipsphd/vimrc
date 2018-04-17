@@ -33,4 +33,13 @@ and
 https://github.com/tmux-plugins/tpm
 https://github.com/VundleVim/Vundle.vim
 
-for more info if needed
+for more info if needed.
+
+YouCompleteMe: YCM is not so easy to install but is an amazing tool.  The website and novel-length instructions are here:
+
+http://valloric.github.io/YouCompleteMe/
+
+Critically, it won't work properly after a successful install.  There are further things you have to do to actually use it, such as setting the appropriate flags in the .vimrc file, and creating a .ycm_extra_conf.py file.  This mechanism allows for extraordinary project-specific customization but for now we just have one default file.
+
+$ cp <path>/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py ~/.vim/bundle/YouCompleteMe
+

@@ -10,11 +10,16 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Keep Plugin commands between vundle#begin/end.
 Plugin 'davidhalter/jedi-vim'
+Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
 
 " END VUNDLE-RELATED ENTRIES
+
+" These entries are for YouCompleteMe
+let g:ycm_server_python_interpreter = '/usr/bin/python'
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
 
 set tabstop=4
 set expandtab
