@@ -16,13 +16,13 @@ Install vim plugins:
 $ mkdir ~/.vim
 $ mkdir ~/.vim/bundle
 $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-$ cp <path>/mattphillipsphd/vimrc/.vimrc ~
+$ cp ~/Repos/mattphillipsphd/vimrc/.vimrc ~
 $ vim +PluginInstall +qall
 
 And that should do it for basic setup.  For filetype-specific controls:
 
 $ mkdir ~/.vim/ftplugin
-$ cp <path>/ftplugin/cpp.vim ~/.vim/ftplugin
+$ cp ~/Repos/mattphillipsphd/vimrc/ftplugin/cpp.vim ~/.vim/ftplugin
 
 And any others that might be present.  See
 
