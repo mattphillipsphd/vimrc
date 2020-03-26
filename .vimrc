@@ -1,5 +1,6 @@
 " BEGIN VUNDLE-RELATED ENTRIES
 " See https://github.com/VundleVim/Vundle.vim
+set encoding=utf-8
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
