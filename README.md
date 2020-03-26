@@ -4,6 +4,7 @@ Note that on Windows Bash systems you will need to manually create the relevant 
 
 Install tmux with plugins:
 
+$ sudo apt install tmux
 $ mkdir ~/.tmux
 $ mkdir ~/.tmux/plugins
 $ git clone https://github.com/tmux-plugins/tmux-resurrect ~/.tmux/plugins/resurrect

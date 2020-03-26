@@ -30,7 +30,7 @@ syntax on
 filetype indent plugin on
 set hlsearch
 set incsearch
-set colorcolumn=81
+set colorcolumn=80
 
 set background=dark
 set statusline+=%F
