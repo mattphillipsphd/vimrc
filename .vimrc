@@ -10,8 +10,9 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Keep Plugin commands between vundle#begin/end.
-Plugin 'davidhalter/jedi-vim'
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'davidhalter/jedi-vim'
+" Plugin 'Valloric/YouCompleteMe'
+Plugin 'frazrepo/vim-rainbow'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
