@@ -23,6 +23,9 @@ filetype plugin indent on    " required
 let g:ycm_server_python_interpreter = '/usr/bin/python'
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
 
+" For vim-rainbow
+let g:rainbow_active = 1
+
 set tabstop=4
 set expandtab
 set clipboard=unnamedplus
