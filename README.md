@@ -7,7 +7,7 @@ Install tmux with plugins:
 Linux:
 $ sudo apt install tmux
 
-Mac:
+MacOS:
 $ brew install tmux
 
 $ mkdir ~/.tmux
@@ -17,7 +17,7 @@ $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 $ cp ~/Repos/mattphillipsphd/vimrc/.tmux.conf ~
 $ tmux source ~/.tmux.conf
 
-Install vim plugins:
+Install vim plugins (vim should already be present):
 
 $ mkdir ~/.vim
 $ mkdir ~/.vim/bundle

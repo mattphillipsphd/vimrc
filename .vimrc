@@ -12,6 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 " Plugin 'davidhalter/jedi-vim'
 " Plugin 'Valloric/YouCompleteMe'
+Plugin 'frazrepo/vim-rainbow'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -21,6 +22,9 @@ filetype plugin indent on    " required
 " These entries are for YouCompleteMe
 let g:ycm_server_python_interpreter = '/usr/bin/python'
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
+
+" For vim-rainbow
+let g:rainbow_active = 1
 
 set tabstop=4
 set shiftwidth=4
