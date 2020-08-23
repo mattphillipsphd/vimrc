@@ -4,12 +4,17 @@ Note that on Windows Bash systems you will need to manually create the relevant 
 
 Install tmux with plugins:
 
+Linux:
 $ sudo apt install tmux
+
+Mac:
+$ brew install tmux
+
 $ mkdir ~/.tmux
 $ mkdir ~/.tmux/plugins
 $ git clone https://github.com/tmux-plugins/tmux-resurrect ~/.tmux/plugins/resurrect
 $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-$ cp <path>/mattphillipsphd/vimrc/.tmux.conf ~
+$ cp ~/Repos/mattphillipsphd/vimrc/.tmux.conf ~
 $ tmux source ~/.tmux.conf
 
 Install vim plugins:

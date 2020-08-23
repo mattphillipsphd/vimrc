@@ -10,8 +10,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Keep Plugin commands between vundle#begin/end.
-Plugin 'davidhalter/jedi-vim'
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'davidhalter/jedi-vim'
+" Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -23,6 +23,7 @@ let g:ycm_server_python_interpreter = '/usr/bin/python'
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
 
 set tabstop=4
+set shiftwidth=4
 set expandtab
 set clipboard=unnamedplus
 set pastetoggle=<F3>
