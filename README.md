@@ -1,4 +1,4 @@
-Install tmux and vim.
+Install tmux, vim, and virtualenvwrapper
 
 Note that on Windows Bash systems you will need to manually create the relevant directories (the alternative is to reconfigure default paths, which probably creates more problems than it solves):
 
@@ -17,7 +17,11 @@ $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 $ cp ~/Repos/mattphillipsphd/vimrc/.tmux.conf ~
 $ tmux source ~/.tmux.conf
 
-Install vim plugins (vim should already be present):
+Install vim if not already present:
+
+$ sudo apt install vim
+
+Install vim plugins:
 
 $ mkdir ~/.vim
 $ mkdir ~/.vim/bundle
@@ -48,4 +52,26 @@ http://valloric.github.io/YouCompleteMe/
 Critically, it won't work properly after a successful install.  There are further things you have to do to actually use it, such as setting the appropriate flags in the .vimrc file, and creating a .ycm_extra_conf.py file.  This mechanism allows for extraordinary project-specific customization but for now we just have one default file.
 
 $ cp <path>/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py ~/.vim/bundle/YouCompleteMe
+
+Install virtualenvwrapper:
+
+$ sudo apt install virtualenv
+$ sudo apt install virtualenvwrapper
+$ sudo apt install python3-pip
+
+Now, find the location of virtualenvwrapper.sh.  On Ubuntu 20.04 it gets put in
+
+/usr/share/virtualenvwrapper/virtualenvwrapper.sh
+
+Then in .bashrc add these lines:
+
+export WORKON_HOME=$HOME/.virtualenvs
+. /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+
+and don't forget to source .bashrc on any preexisting terminal before using.
+
+Some standard pip installs:
+
+$ pip install numpy scikit-learn pandas matplotlib torch torchvision
+
 
