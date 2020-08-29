@@ -2,6 +2,15 @@ Install tmux, vim, and virtualenvwrapper
 
 Note that on Windows Bash systems you will need to manually create the relevant directories (the alternative is to reconfigure default paths, which probably creates more problems than it solves):
 
+First set up git:
+
+$ sudo apt install git
+$ git config --global user.name "Matt Phillips"
+$ git config --global user.config <gmail>
+$ git config --global core.editor vim
+$ cp ~/Repos/mattphillipsphd/vimrc/.gitignore_global ~
+$ git config --global core.excludesfile ~/.gitignore_global
+
 Install tmux with plugins:
 
 Linux:
@@ -70,8 +79,5 @@ export WORKON_HOME=$HOME/.virtualenvs
 
 and don't forget to source .bashrc on any preexisting terminal before using.
 
-Some standard pip installs:
-
-$ pip install numpy scikit-learn pandas matplotlib torch torchvision
-
+Standard pip installs are in ~/Repos/mattphillipsphd/vimrc/requirements_all.txt
 
