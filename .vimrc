@@ -40,3 +40,10 @@ set colorcolumn=80
 
 set background=dark
 set statusline+=%F
+
+set number
+set relativenumber
+set numberwidth=4
+
+nnoremap <C-N><C-N> :set invnumber \| set invrelativenumber<CR>
+
